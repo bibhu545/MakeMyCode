@@ -1,0 +1,39 @@
+.post-area{
+    padding: 15px 50px;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0px;
+    /* background-color: white; */
+}
+.post-img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+}
+.post-body{
+    margin: 10px;
+}
+.blog-side-panel{
+    padding: 100px 20px;
+}
+.card-footer{
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 0px 0px 10px 10px;
+    line-height: 50px;
+    padding: 0px 10px;
+    color: black;
+}
+.panel{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.panel-heading{
+    border-radius: 10px 10px 0px 0px;    
+}
+.panel-body, .panel-heading{
+    padding-left: 30px;
+    padding-right: 30px;
+}

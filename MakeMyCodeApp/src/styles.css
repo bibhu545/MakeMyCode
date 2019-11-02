@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+
+body{
+    font-family: 'McLaren', cursive;
+    padding-top: 50px;
+    min-height: 600px;
+}
+.red-text{
+    color: red;
+}

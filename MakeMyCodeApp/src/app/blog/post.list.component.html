@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 post-area">
+            <h3>Welcome to MakeMyCode Blog</h3>
+            <div class="card" *ngFor="let post of _posts">
+                <img src="{{ _postImagePath }}" alt="post-img" class="post-img">
+                <br />
+                <div class="post-body">
+                    <h3>Post Title Here</h3>
+                    <p class="post-short-text">
+                        {{ post }}
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    Posted on January 1, 2017 by
+                    <a href="#">Start Bootstrap</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 blog-side-panel">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Search</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Categories</h4>
+                </div>
+                <div class="panel-body post-category">
+                    <div class="row">
+                        <div class="col-sm-6" *ngFor="let category of _categories">
+                            <p><a href="#">{{ category }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

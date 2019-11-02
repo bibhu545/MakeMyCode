@@ -1,0 +1,10 @@
+
+.container-wrapper-dark{
+    /* background-color: grey; */
+    background: linear-gradient(to right, #373b44, #373b44, #73c8a9); 
+    color: white;
+}
+.container-wrapper-light{
+    background: linear-gradient(to right, #fffcdc, #fffcdc, #b7e5ff);
+    color: black;
+}
