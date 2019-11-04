@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+
 import { BRAND_NAME } from '../_utils/utils';
 import { DropdownModel } from '../_utils/models';
 
@@ -14,6 +16,9 @@ export class AdminMasterComponent implements OnInit {
   _uiClass: number = 0;
 
   constructor() {
+    if(sessionStorage.getItem("uiClass")){
+      this._uiClass = parseInt(sessionStorage.getItem("uiClass"));
+    }
   }
 
   ngOnInit() {
@@ -23,9 +28,11 @@ export class AdminMasterComponent implements OnInit {
     $event.preventDefault();
     if (index == 0) {
       this._uiClass = 0;
+      sessionStorage.setItem("uiClass", "0");
     }
     else {
       this._uiClass = 1;
+      sessionStorage.setItem("uiClass", "1");
     }
   }
 
