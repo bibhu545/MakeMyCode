@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminMasterComponent } from './_shared/admin.master.component';
 import { PostListComponent } from './blog/post.list.component';
 import { PostComponent } from './blog/post.component';
+import { CreatePostComponent } from './blog/create.post.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,17 @@ const routes: Routes = [
         outlet: 'master',
         path: '',
         component: PostComponent
+      }
+    ]
+  },
+  {
+    path: "create_post",
+    component: AdminMasterComponent,
+    children: [
+      {
+        outlet: 'master',
+        path: '',
+        component: CreatePostComponent
       }
     ]
   }

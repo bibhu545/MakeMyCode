@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { EditPostComponent } from './edit.post.component';
 import { PostComponent } from './post.component';
 import { PostListComponent } from './post.list.component';
+import { CreatePostComponent } from './create.post.component';
+import { CKEditorModule } from 'ckeditor4-angular';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -10,10 +13,13 @@ import { PostListComponent } from './post.list.component';
   declarations: [
     EditPostComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    CreatePostComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    CKEditorModule 
   ]
 })
 export class BlogModule { }

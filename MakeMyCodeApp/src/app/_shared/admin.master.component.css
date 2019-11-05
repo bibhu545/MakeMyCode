@@ -1,6 +1,3 @@
-.blog-side-panel{
-    padding: 100px 20px;
-}
 .panel{
     border: 1px solid black;
     border-radius: 10px;
@@ -14,7 +11,8 @@
 }
 .footer{
     height: 100px;
-    background-color: grey;
+    background-color: lightgray;
+    color: black;
 }
 .footer-left{
     padding: 20px;
@@ -26,4 +24,60 @@
 }
 .fa{
     margin: 0px 5px;
+}
+.fa-facebook-square{
+    color: #3B5998;
+}
+.fa-github-square{
+    color: #c9510c;
+}
+.fa-instagram{
+    color: #e4405f;
+}
+.fa-youtube-play{
+    color: #cd201f;
+}
+
+
+/* The overlay effect with black background for search*/
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.77); /* Black with a little bit see-through */
+}
+  
+/* The content */
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+  
+/* Close button */
+.overlay .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+  
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.search-field{
+      background: rgba(0,0,0, 0.77);
+      color: white;
+      border: none;
+      border-radius: 10px;
 }

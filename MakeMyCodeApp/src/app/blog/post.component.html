@@ -8,5 +8,32 @@
                 <span innerHTML="{{ post }}"></span>
             </p>
         </div>
+        <div class="col-sm-4 blog-side-panel">
+
+            <p class="center-text">
+                Featured Articles
+            </p>
+            <div class="list-group">
+                <a href="#" class="list-group-item">First item</a>
+                <a href="#" class="list-group-item">Second item</a>
+                <a href="#" class="list-group-item">Third item</a>
+                <a href="#" class="list-group-item">First item</a>
+                <a href="#" class="list-group-item">Second item</a>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Categories</h4>
+                </div>
+                <div class="panel-body post-category">
+                    <div class="row">
+                        <div class="col-sm-6" *ngFor="let category of _categories">
+                            <p><a href="#">{{ category }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>

@@ -1,0 +1,12 @@
+.btn{
+    margin: 5px 5px 20px 5px;
+    border-radius: 8px;
+}
+.form-control{
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+textarea{
+    resize: vertical;
+}
