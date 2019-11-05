@@ -30,7 +30,8 @@
 </nav>
 
 <div [ngClass]="{'container-wrapper-dark': _uiClass == 1, 'container-wrapper-light': _uiClass == 0}">
-    <div class="container">
+    <router-outlet name="master"></router-outlet>
+    <!-- <div class="container">
         <div class="row">
             <router-outlet name="master"></router-outlet>
             <div class="col-sm-4 blog-side-panel">
@@ -65,5 +66,5 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
