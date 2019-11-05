@@ -31,6 +31,21 @@
 
 <div [ngClass]="{'container-wrapper-dark': _uiClass == 1, 'container-wrapper-light': _uiClass == 0}">
     <router-outlet name="master"></router-outlet>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-sm-6 footer-left">
+                Nom Nom Ltd. <br />
+                Patia, Bhubaneswar, 751024 <br />
+                Copyright NomNom.com 2020
+            </div>
+            <div class="col-sm-6 footer-right">
+                <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-github-square" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-youtube-play" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
     <!-- <div class="container">
         <div class="row">
             <router-outlet name="master"></router-outlet>

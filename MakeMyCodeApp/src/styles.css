@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
     font-family: 'McLaren', cursive;
@@ -12,4 +13,19 @@ body{
 }
 .red-text{
     color: red;
+}
+.center-text{
+    text-align: center;
+}
+.container-wrapper-dark{
+    /* background-color: grey; */
+    background: linear-gradient(to right, #373b44, #373b44, #73c8a9); 
+    color: white;
+}
+.container-wrapper-light{
+    background: linear-gradient(to right, #fffcdc, #fffcdc, #b7e5ff);
+    color: black;
+}
+.panel{
+    color: black;
 }

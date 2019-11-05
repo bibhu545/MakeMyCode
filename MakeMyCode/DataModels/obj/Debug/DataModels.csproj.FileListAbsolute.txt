@@ -1,0 +1,5 @@
+D:\Projects\MakeMyCode\MakeMyCode\DataModels\bin\Debug\DataModels.dll
+D:\Projects\MakeMyCode\MakeMyCode\DataModels\bin\Debug\DataModels.pdb
+D:\Projects\MakeMyCode\MakeMyCode\DataModels\obj\Debug\DataModels.csprojResolveAssemblyReference.cache
+D:\Projects\MakeMyCode\MakeMyCode\DataModels\obj\Debug\DataModels.dll
+D:\Projects\MakeMyCode\MakeMyCode\DataModels\obj\Debug\DataModels.pdb

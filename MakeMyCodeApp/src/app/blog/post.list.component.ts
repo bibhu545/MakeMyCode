@@ -18,9 +18,9 @@ export class PostListComponent implements OnInit {
   }
 
   createPosts(){
-    var text: String = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...";
+    var text: String = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever the 1500s...";
 
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 6; index++) {
       this._posts.push(text);
     }
   }
