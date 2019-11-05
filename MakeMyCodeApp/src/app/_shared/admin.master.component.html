@@ -15,7 +15,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Change Theme<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Change Theme<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#" (click)="changeUI(0, $event)">Light Mode</a></li>
                         <li><a href="#" (click)="changeUI(1, $event)">Dark Mode</a></li>
@@ -29,5 +30,40 @@
 </nav>
 
 <div [ngClass]="{'container-wrapper-dark': _uiClass == 1, 'container-wrapper-light': _uiClass == 0}">
-    <router-outlet name="master"></router-outlet>
+    <div class="container">
+        <div class="row">
+            <router-outlet name="master"></router-outlet>
+            <div class="col-sm-4 blog-side-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Search</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Categories</h4>
+                    </div>
+                    <div class="panel-body post-category">
+                        <div class="row">
+                            <div class="col-sm-6" *ngFor="let category of _categories">
+                                <p><a href="#">{{ category }}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

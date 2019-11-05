@@ -1,0 +1,11 @@
+.post-image{
+    width: 100%;
+    height: 385px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.image-desc{
+    text-align: center;
+    padding-bottom: 15px;
+}

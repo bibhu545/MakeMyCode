@@ -7,6 +7,9 @@ body{
     padding-top: 50px;
     min-height: 600px;
 }
+.post-area{
+    padding: 25px 50px;
+}
 .red-text{
     color: red;
 }

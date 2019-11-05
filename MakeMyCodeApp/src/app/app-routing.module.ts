@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AdminMasterComponent } from './_shared/admin.master.component';
 import { PostListComponent } from './blog/post.list.component';
+import { PostComponent } from './blog/post.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,17 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: "post/:number",
+    component: AdminMasterComponent,
+    children: [
+      {
+        outlet: 'master',
+        path: '',
+        component: PostComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

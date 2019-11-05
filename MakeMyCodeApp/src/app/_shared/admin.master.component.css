@@ -8,3 +8,17 @@
     background: linear-gradient(to right, #fffcdc, #fffcdc, #b7e5ff);
     color: black;
 }
+.blog-side-panel{
+    padding: 100px 20px;
+}
+.panel{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.panel-heading{
+    border-radius: 10px 10px 0px 0px;    
+}
+.panel-body, .panel-heading{
+    padding-left: 30px;
+    padding-right: 30px;
+}

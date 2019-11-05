@@ -14,11 +14,19 @@ export class AdminMasterComponent implements OnInit {
   _brandName: String = BRAND_NAME.text;
   _uiList: DropdownModel[] = [];
   _uiClass: number = 0;
+  _categories: String[] = [];
 
   constructor() {
-    if(sessionStorage.getItem("uiClass")){
+    if (sessionStorage.getItem("uiClass")) {
       this._uiClass = parseInt(sessionStorage.getItem("uiClass"));
     }
+    this._categories.push("Category1");
+    this._categories.push("Category2");
+    this._categories.push("Category3");
+    this._categories.push("Category4");
+    this._categories.push("Category5");
+    this._categories.push("Category6");
+    this._categories.push("Category7");
   }
 
   ngOnInit() {
