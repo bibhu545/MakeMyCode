@@ -55,7 +55,8 @@
     <Compile Include="ApproveStatus.cs">
       <DependentUpon>MakeMyCode.tt</DependentUpon>
     </Compile>
-    <Compile Include="BaseBusinessClass.cs" />
+    <Compile Include="BusinessClasses\BaseBusinessClass.cs" />
+    <Compile Include="BusinessClasses\PostBusiness.cs" />
     <Compile Include="MakeMyCode.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

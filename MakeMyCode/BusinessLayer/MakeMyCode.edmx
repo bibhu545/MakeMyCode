@@ -23,6 +23,7 @@
           <Property Name="Body" Type="text" Nullable="false" />
           <Property Name="FeaturedImage" Type="varchar" MaxLength="500" />
           <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="AuthorName" Type="varchar" MaxLength="255" />
           <Property Name="IsActive" Type="int" Nullable="false" />
           <Property Name="IsApproved" Type="int" Nullable="false" />
           <Property Name="CreatedOn" Type="datetime" Nullable="false" />
@@ -130,6 +131,7 @@
           <Property Name="LastUpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="ApproveStatus" Relationship="MakeMyCodeModel.FK_Posts_ApproveStatus" FromRole="Posts" ToRole="ApproveStatus" />
           <NavigationProperty Name="Users" Relationship="MakeMyCodeModel.FK_Posts_Users" FromRole="Posts" ToRole="Users" />
+          <Property Name="AuthorName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Posts_ApproveStatus">
           <End Type="MakeMyCodeModel.ApproveStatus" Role="ApproveStatus" Multiplicity="1" />
@@ -185,6 +187,7 @@
           <EntitySetMapping Name="Posts">
             <EntityTypeMapping TypeName="MakeMyCodeModel.Posts">
               <MappingFragment StoreEntitySet="Posts">
+                <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
                 <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
                 <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
                 <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />

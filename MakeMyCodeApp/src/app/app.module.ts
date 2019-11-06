@@ -9,17 +9,25 @@ import { PostListComponent } from './blog/post.list.component';
 import { PostComponent } from './blog/post.component';
 import { EditPostComponent } from './blog/edit.post.component';
 import { BlogModule } from './blog/blog.module';
+import { LoginComponent } from './account/login.component';
+import { SignupComponent } from './account/signup.component';
+import { FormsModule } from '@angular/forms';
+import { AccountModule } from './account/account.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AdminMasterComponent
+    AdminMasterComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BlogModule
+    FormsModule,
+    BlogModule,
+    AccountModule
   ],
   providers: [],
   bootstrap: [AppComponent]

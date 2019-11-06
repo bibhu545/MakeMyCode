@@ -7,8 +7,6 @@ import { CreatePostComponent } from './create.post.component';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { FormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [
     EditPostComponent,

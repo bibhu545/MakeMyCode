@@ -5,6 +5,8 @@ import { AdminMasterComponent } from './_shared/admin.master.component';
 import { PostListComponent } from './blog/post.list.component';
 import { PostComponent } from './blog/post.component';
 import { CreatePostComponent } from './blog/create.post.component';
+import { LoginComponent } from './account/login.component';
+import { SignupComponent } from './account/signup.component';
 
 
 const routes: Routes = [
@@ -49,6 +51,28 @@ const routes: Routes = [
         outlet: 'master',
         path: '',
         component: CreatePostComponent
+      }
+    ]
+  },
+  {
+    path: "login",
+    component: AdminMasterComponent,
+    children: [
+      {
+        outlet: 'master',
+        path: '',
+        component: LoginComponent
+      }
+    ]
+  },
+  {
+    path: "signup",
+    component: AdminMasterComponent,
+    children: [
+      {
+        outlet: 'master',
+        path: '',
+        component: SignupComponent
       }
     ]
   }

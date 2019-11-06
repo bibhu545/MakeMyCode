@@ -24,6 +24,7 @@ namespace BusinessLayer
         public int IsApproved { get; set; }
         public System.DateTime CreatedOn { get; set; }
         public System.DateTime LastUpdatedOn { get; set; }
+        public string AuthorName { get; set; }
     
         public virtual ApproveStatus ApproveStatus { get; set; }
         public virtual Users Users { get; set; }
