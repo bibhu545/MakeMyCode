@@ -78,6 +78,6 @@
 .search-field{
       background: rgba(0,0,0, 0.77);
       color: white;
-      border: none;
+      border: 1px solid grey;
       border-radius: 10px;
 }
