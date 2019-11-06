@@ -26,5 +26,7 @@ namespace BusinessLayer
         }
     
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<ApproveStatus> ApproveStatus { get; set; }
+        public virtual DbSet<Posts> Posts { get; set; }
     }
 }
