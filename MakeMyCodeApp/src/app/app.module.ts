@@ -13,6 +13,8 @@ import { LoginComponent } from './account/login.component';
 import { SignupComponent } from './account/signup.component';
 import { FormsModule } from '@angular/forms';
 import { AccountModule } from './account/account.module';
+import { HttpService } from './_services/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { AccountModule } from './account/account.module';
     AppRoutingModule,
     FormsModule,
     BlogModule,
-    AccountModule
+    AccountModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

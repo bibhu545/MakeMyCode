@@ -5,3 +5,16 @@ export const BRAND_NAME = {
 export class UtilFunction {
 
 }
+
+export const RESPONSE_CODES = {
+    successResponse: 1,
+    failResponse: 2,
+    authenticateFailResponse: 3,
+    duplicate: 4
+};
+
+var baseApiUrl = 'http://mmc.me';
+
+export const API_ENDPOINTS = {
+    createPost: baseApiUrl + "/post/SavePost"
+}
