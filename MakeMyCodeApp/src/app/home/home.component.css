@@ -1,8 +1,8 @@
 .timeline{
-    padding: 50px;
+    padding: 0px 50px;
 }
 .timeline-section{
-    height: 200px;
+    height: 250px;
 }
 .section-one{
     border-left: 2px solid maroon;
@@ -24,7 +24,7 @@
     height: 20px;
     width: 20px;
     position: relative;
-    margin-top: 142px;
+    margin-top: 192px;
     float: right;
     border-bottom: 2px solid maroon;
     border-bottom-right-radius: 10px;    
@@ -84,7 +84,7 @@
     width: 600px;
     background:linear-gradient(to right, #f1f2b5, #135058);
     border-radius: 10px;
-    box-shadow:20px 20px 10px grey;
+    box-shadow:10px 10px 10px grey;
 }
 
 .triangle-right {
@@ -106,5 +106,34 @@
     width: 600px;
     background: linear-gradient(to right, #34e89e, #0f3443);
     border-radius: 10px;
-    box-shadow:-20px 20px 10px grey;
+    box-shadow:-10px 10px 10px grey;
+}
+
+.hero-section{
+    background: url('/assets/images/intro-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 100px;
+}
+.hero-section .col-sm-6{
+}
+.contact-section{
+    background: url('/assets/images/banner-bg.jpg') no-repeat center center fixed;
+    height: 60vh;   
+}
+.intro-section{
+    height: calc((100vh - 40px) / 3);
+}
+.left-intro-section-one{
+    background-color: chartreuse;
+}
+.left-intro-section-two{
+    background-color: rgba(255, 0, 0, 0.5);
+    position: relative;
+    top: -50px;
+    left: -100px;
+}
+.left-intro-section-three{
+    background-color: rgba(0, 255, 0, 0.5);
+    top: -100px;
 }
