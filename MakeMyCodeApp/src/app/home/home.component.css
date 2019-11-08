@@ -2,13 +2,16 @@
 
 .timeline{
     padding: 0px 50px;
+    /* background: linear-gradient(to right, #efefbb, #d4d3dd); */
+    background: url('/assets/images/bckgr.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .timeline-section{
     height: 250px;
 }
 .section-one{
-    border-left: 2px solid maroon;
-    border-bottom: 2px solid maroon;
+    border-left: 3px solid maroon;
+    border-bottom: 3px solid maroon;
     border-bottom-left-radius: 10px;
     margin-right: 20px;
     width: calc(100% - 20px);
@@ -17,30 +20,30 @@
     height: 20px;
     width: 20px;
     position: relative;
-    top: -2.4px;
+    top: -3px;
     float: right;
-    border-top: 2px solid maroon;
+    border-top: 3px solid maroon;
     border-top-right-radius: 10px;
 }
 .dabba-bottom{
     height: 20px;
     width: 20px;
     position: relative;
-    margin-top: 192px;
+    margin-top: 193px;
     float: right;
-    border-bottom: 2px solid maroon;
+    border-bottom: 3px solid maroon;
     border-bottom-right-radius: 10px;    
 }
 .section-two{
-    border-right: 2px solid maroon;
+    border-right: 3px solid maroon;
     text-align: right;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .section-three{
     border-top-left-radius: 10px;
-    border-top: 2px solid maroon;
-    border-left: 2px solid maroon;
+    border-top: 3px solid maroon;
+    border-left: 3px solid maroon;
     width: calc(100% - 20px);
 }
 .timeline-left-icon, .timeline-right-icon{
@@ -67,6 +70,11 @@
     line-height: 200px;
 }
 
+
+.rectangle{
+    padding: 5%; 
+}
+
 .triangle-left{
     position: relative;
     top: 70px;
@@ -74,7 +82,7 @@
     height:0;
     width:0;
     border-top: 20px solid transparent;
-    border-right: 30px solid #f1f2b5;
+    border-right: 30px solid #4ac29a;
     border-bottom: 20px solid transparent;
 }
 
@@ -83,8 +91,8 @@
     left: 60px;
     height: 100px;
     width: calc(100% - 100px);
-    background:linear-gradient(to right, #f1f2b5, #135058);
-    border-radius: 10px;
+    background: linear-gradient(to right, #4ac29a, #bdfff3);
+    border-radius: 5px 30px;
     box-shadow:10px 10px 10px grey;
 }
 
@@ -95,7 +103,7 @@
     height:0;
     width:0;
     border-top: 20px solid transparent;
-    border-left: 30px solid #0f3443;
+    border-left: 30px solid #4ac29a;
     border-bottom: 20px solid transparent;
 }
 
@@ -104,8 +112,8 @@
     right: 63px;
     height: 100px;
     margin-left: 24%;
-    background: linear-gradient(to right, #34e89e, #0f3443);
-    border-radius: 10px;
+    background: linear-gradient(to left, #4ac29a, #bdfff3);
+    border-radius: 30px 5px;
     box-shadow:-10px 10px 10px grey;
 }
 
