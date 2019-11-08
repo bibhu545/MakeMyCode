@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
 .timeline{
     padding: 0px 50px;
 }
@@ -113,27 +115,29 @@
     background: url('/assets/images/intro-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    padding: 50px 100px;
-}
-.hero-section .col-sm-6{
+    /* padding: 50px 100px; */
 }
 .contact-section{
     background: url('/assets/images/banner-bg.jpg') no-repeat center center fixed;
     height: 60vh;   
 }
+.intro-section-wrapper{
+    padding: 150px 0px;
+}
 .intro-section{
-    height: calc((100vh - 40px) / 3);
-}
-.left-intro-section-one{
-    background-color: chartreuse;
-}
-.left-intro-section-two{
-    background-color: rgba(255, 0, 0, 0.5);
     position: relative;
-    top: -50px;
-    left: -100px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid white;
+    border-radius: 30px 0px;
+    padding: 40px 60px;
+    font-size: 1.1em;
 }
-.left-intro-section-three{
-    background-color: rgba(0, 255, 0, 0.5);
-    top: -100px;
+.intro-section > h2{
+    font-family: 'Lobster Two', cursive;
+}
+.hello-btn{
+    position: relative;
+    top: -20px;
+    border-radius: 15px 0px;
 }
