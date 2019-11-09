@@ -10,9 +10,10 @@
     padding-right: 30px;
 }
 .footer{
-    height: 100px;
+    min-height: 100px;
     background-color: lightgray;
     color: black;
+    height: 100%;
 }
 .footer-left{
     padding: 20px;

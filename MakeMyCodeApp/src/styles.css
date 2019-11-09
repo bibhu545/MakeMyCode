@@ -29,3 +29,9 @@ body{
 .panel{
     color: black;
 }
+.btn{
+    transition: transform .5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}

@@ -10,3 +10,6 @@
 textarea{
     resize: vertical;
 }
+.modal-close-button{
+    margin: 0;
+}
