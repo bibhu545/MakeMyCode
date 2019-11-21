@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CKEditorModule } from 'ckeditor4-angular';
-import { CreatePostModel } from '../_utils/models';
-import { HttpClient } from '@angular/common/http';
+import { CreatePostModel, UserLoginModel } from '../_utils/models';
 import { API_ENDPOINTS } from '../_utils/utils';
-// import EditorJS from '@editorjs/editorjs';
-// import Header from '@editorjs/header';
+import { HttpService } from '../_services/http.service';
 
 
 @Component({
@@ -16,18 +14,17 @@ export class CreatePostComponent implements OnInit {
 
   _newPost: CreatePostModel = new CreatePostModel();
 
-  constructor(private _http: HttpClient) {
+  constructor(private _http: HttpService) {
   }
 
   ngOnInit() {
   }
 
-  savePost(){
-    console.log(this._newPost);
-    this._http.post(API_ENDPOINTS.createPost, JSON.stringify(this._newPost)).subscribe(responseData => {
-      console.log("Hello");
-      console.log(responseData);
-    });
+  savePost() {
+    this._http.postData(API_ENDPOINTS.createPost, this._newPost).subscribe(
+      responseData => {
+        console.log(responseData);
+      });
   }
 
 }

@@ -191,7 +191,7 @@
 .blogger-image-section:hover .text, .photographer-image-section:hover .text{
     opacity: 1;
     color:white;
-    padding: 120px 0px;
+    padding: 100px 30px;
 }
 
 /* .image{

@@ -6,43 +6,53 @@
                     <div class="col-sm-6"></div>
                     <div class="col-sm-6 form-container-right">
                         <h4 class="center-text">Signup and Experience</h4>
-                        <form>
+                        <form #signupForm="ngForm">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstName">First Name*:</label>
                                         <input type="firstName" class="form-control" id="firstName"
-                                            placeholder="Enter First Name" name="firstName">
+                                            placeholder="Enter First Name" name="firstName"
+                                            [(ngModel)]="_user.firstName" required #firstName
+                                            [class.is-invalid]="firstName.invalid && firstName.touched">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="lastName">Last Name*:</label>
                                         <input type="lastName" class="form-control" id="lastName"
-                                            placeholder="Enter Last Name" name="lastName">
+                                            placeholder="Enter Last Name" name="lastName" [(ngModel)]="_user.lastName"
+                                            required #lastName
+                                            [class.is-invalid]="lastName.invalid && lastName.touched">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email*:</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                    name="email">
+                                    name="email" [(ngModel)]="_user.email" required #email
+                                    [class.is-invalid]="email.invalid && email.touched">
+                                    <!-- appForbiddenName="admin@admin.com"> -->
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Password*:</label>
                                 <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                    name="pwd">
+                                    name="pwd" [(ngModel)]="_user.password" required #password
+                                    [class.is-invalid]="password.invalid && password.touched">
                             </div>
                             <div class="form-group">
                                 <label for="confirmPassword">Confirm Password*:</label>
                                 <input type="password" class="form-control" id="confirmPassword"
-                                    placeholder="Enter password" name="pwd">
+                                    placeholder="Enter password" name="confirmPassword"
+                                    [(ngModel)]="_user.confirmPassword" required #confirmPassword
+                                    [class.is-invalid]="confirmPassword.invalid && confirmPassword.touched">
                             </div>
-                            <div class="checkbox">
+                            <!-- <div class="checkbox">
                                 <label><input type="checkbox" name="remember"> Remember me</label>
-                            </div>
+                            </div> -->
                             <div class="center-text">
-                                <button type="submit" class="btn btn-primary">Signup</button>
+                                <button [disabled]="signupForm.form.invalid" type="submit" class="btn btn-primary"
+                                    (click)="signup()">Signup</button>
                                 <a href="/login" class="btn btn-primary">Login</a>
                             </div>
                         </form>

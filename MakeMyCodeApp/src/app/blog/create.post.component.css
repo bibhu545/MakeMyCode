@@ -13,3 +13,6 @@ textarea{
 .modal-close-button{
     margin: 0;
 }
+.form-control, input, textarea{
+    color: black;
+}

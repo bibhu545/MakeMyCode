@@ -16,5 +16,7 @@ export const RESPONSE_CODES = {
 var baseApiUrl = 'http://mmc.me';
 
 export const API_ENDPOINTS = {
-    createPost: baseApiUrl + "/post/SavePost"
+    createPost: baseApiUrl + "/post/SavePost",
+    login: baseApiUrl + "/post/Login",
+    signup: baseApiUrl + "/Account/Signup"
 }

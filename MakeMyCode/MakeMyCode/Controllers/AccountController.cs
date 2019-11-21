@@ -5,27 +5,29 @@ using System.Web;
 using System.Web.Mvc;
 using MakeMyCode.Models;
 using MakeMyCode.Business;
+using System.Collections;
 
 namespace MakeMyCode.Controllers
 {
-    public class PostController : Controller
+    public class AccountController : Controller
     {
         [HttpPost]
-        public JsonResult SavePost(PostModel model)
+        public JsonResult Signup(UserSignUpModel model)
         {
             try
             {
-                int saved = PostBusiness.CreatePost(model);
-                return new JsonResult() { Data = saved, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+                int signedUp = AccountBusiness.SignUp(model);
+                return new JsonResult() { Data = new ArrayList() { signedUp } };
             }
             catch (Exception ex)
             {
                 return new JsonResult() { Data = ex.Message };
             }
         }
-        public String GetName()
+        [HttpGet]
+        public string test()
         {
-            return "Hello MMC";
+            return "test";
         }
     }
 }

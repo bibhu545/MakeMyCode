@@ -37,3 +37,7 @@
     width: 100%;
     border-radius: 15px;
 }
+
+input.ng-invalid.ng-touched{
+    background-color: rgb(252, 172, 172);
+}

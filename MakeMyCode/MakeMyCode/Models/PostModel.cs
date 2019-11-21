@@ -19,4 +19,9 @@ namespace MakeMyCode.Models
         public System.DateTime createdOn { get; set; }
         public System.DateTime lastUpdatedOn { get; set; }
     }
+    public class UserLoginModel
+    {
+        public string email { get; set; }
+        public string password { get; set; }
+    }
 }
