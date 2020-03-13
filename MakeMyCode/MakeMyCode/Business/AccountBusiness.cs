@@ -19,7 +19,8 @@ namespace MakeMyCode.Business
                     Password = model.password,
                     IsActive = 1
                 });
-                return context.SaveChanges();
+                return 0;
+                //return context.SaveChanges();
             }
         }
     }

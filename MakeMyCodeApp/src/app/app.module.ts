@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { AccountModule } from './account/account.module';
 import { HttpService } from './_services/http.service';
 import { HttpClientModule } from '@angular/common/http';
+// import { NgHttpLoaderModule } from 'ng-http-loader'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     BlogModule,
     AccountModule,
-    HttpClientModule
+    HttpClientModule,
+    // NgHttpLoaderModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
